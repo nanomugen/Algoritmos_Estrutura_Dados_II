@@ -72,7 +72,7 @@ int conexo( grafo* g ) {
         if (rx!=ry)
         Union(subconjuntos, rx, ry);
     }
-    for(k=1;k<g->V;k++)
+    for(k=0;k<g->V;k++)
         r[subconjuntos[k].pai]++;
     for(k=0;k<g->V;k++)
         if(r[k]>0)
